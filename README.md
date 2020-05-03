@@ -137,6 +137,17 @@ quick example of a directory named website with:
 <p></p>
 ```
 
+* img 
+```
+<img src="" alt="" >
+```
+
+* break line 
+> used to create a line break on our page. You can think of it like hitting enter in a word document. It will force the content to drop down a line.
+```
+<br>
+```
+
 * List
 > Ordered List - We create an ordered list using the <ol> tag. This is the parent element and will have any number of <li> list items inside.
 
@@ -253,10 +264,15 @@ quick example of a directory named website with:
 To add a form to a page, use the <form> element, which identifies where on the page control elements will appear.
 
 ```
-<form>Starting the form</form>
+<form action="/login" method="POST">
+</form>
 ```
 
 An HTML form contains form elements. Form elements are different types of input elements, like text fields, checkboxes, radio buttons, submit buttons, and more.
+
+> type attribute is what allows us to tell HTML what type of input we want to use. The second attribute name will be used to identify the information that the user types in
+
+> added an id attribute to our input tag. In order for our label to work correctly the id of our input needs to match the for attribute on the label. In our example both are given the value of "id-first-name".
 
 ```
 <input type="text" name="name">
@@ -289,6 +305,76 @@ An HTML form contains form elements. Form elements are different types of input 
       <input type="submit" name="submit" value="Send">
     </form>
 ```
+
+```
+        <form>
+            <label for="first-name">First Name</label>
+            <input id="first-name" type="text" name="first_name">
+            <br />
+
+            <label for="last-name">Last Name</label>
+            <input id="last-name" type="text" name="last_name">
+            <br />
+
+            <label for="user-email">Email</label>
+            <input id="user-email" type="text" name="email">
+            <br />
+
+            <label for="user-password">Password</label>
+            <input id="user-password" type="password" name="password">
+            <br />
+
+            <button>Register</button>
+        </form>
+```
+
+<!-- Checkbox -->
+<!-- Ctrl-D , Tab -->
+```
+        <form>
+            <input id="id-one" type="checkbox" name="option-one">
+            <label for="id-one">Option One</label>
+            <input id="id-two" type="checkbox" name="option-two">
+            <label for="id-two">Option two</label>
+            <input id="id-three" type="checkbox" name="option-three">
+            <label for="id-three">Option three</label>
+        </form>
+```
+
+<!-- Radio -->
+```
+        <form>
+            <input id="twenty-thirty" type="radio" name="age_group" value="20-30">
+            <label for="twenty-thirty">20-30 Years Old</label>
+
+            <input id="thirty-forty" type="radio" name="age_group" value="30-40">
+            <label for="thirty-forty">30-40 Years Old</label>
+
+        </form>
+```
+
+<!-- Drop Down -->
+```
+        <form>
+            <label for="user-city">Select Your City</label>
+            <select id="user-city" name="city">
+                <option value="usa">USA</option>
+                <option value="tokyo">Tokyo</option>
+            </select>
+        </form>
+```
+
+<!-- text area -->
+       <form>
+            <label for="user-message">Message</label>
+            <textarea id="user-message" name="message" cols="30" rows="10">
+
+            </textarea>
+        </form>
+
+---
+
+* Div
 
 ---
 
