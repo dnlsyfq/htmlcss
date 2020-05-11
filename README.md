@@ -376,6 +376,25 @@ An HTML form contains form elements. Form elements are different types of input 
 
 * Div
 
+container in html 
+in chrome , elements > highlight div > computed > see width * height
+```
+<div>
+    <img src='pic-of-drew-brees.jpg' alt='football pic'>
+    <h1>Week 10 NFL takeaways:...</h1>
+    <p>New Orleans loses, something about Kansas City... etc.</p>
+</div>
+```
+
+* ID , CLASS 
+
+  1. ID 
+    * find specific tags 
+    * unique, appear once 
+
+  2. CLASS
+    * apply multiple element
+
 ---
 
 # CSS
